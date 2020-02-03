@@ -4,7 +4,7 @@ import java.util.Scanner;
         	Scanner s=new Scanner(System.in);
         	System.out.println("enter no of subjects:");
         	int n=s.nextInt();
-            double[] a = new Double[n];
+            double[] a = new Double[n]; //replace Double  with double
             double sum=0;
             System.out.println("enter marks of subjects:");
             for(int i=0;i<n;i++){
