@@ -1,5 +1,7 @@
 # Javacodes
-useful collection of java algorithms
+useful collection of 100+ java algorithms
+
+Repo creator:Tapan Manu
 
 JDK VERSION=1.8.0
 
