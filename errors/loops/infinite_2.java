@@ -4,5 +4,6 @@ class Loop
             {
                 for(System.out.println("hello");;);
                 //infifnite loop
+                    //blank space in condition field indicates system to be consider it as True
             } 
         }
