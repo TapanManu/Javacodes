@@ -9,11 +9,13 @@ class ErrorTest{
 		l2:{
 			j++;
 			System.out.println(j);
+			//break l2;
 		}
 		l3:{
 			k++;
 			System.out.println(k);
 			break l2;
+			//out of scope results in undefined label
 		}
 }
 }
