@@ -5,7 +5,7 @@ class ErrorTest{
 		l1:{
 			i++;
 			System.out.println(i);
-			break l2;
+			break l2;  //label out of scope
 		}
 		l2:{
 			j++;
