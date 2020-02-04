@@ -14,7 +14,7 @@ class ErrorTest{
 		l3:{
 			k++;
 			System.out.println(k);
-
+			//break l2;    correct one!
 		}
 	}
 }
