@@ -2,7 +2,9 @@ import java.util.Scanner;
 class Main{
 	 public static void main(String[] args) {
 	 Scanner sc=new Scanner(System.in);
-	 char ch=sc.next().charAt(1);       //error if only one char input given
+	 char ch=sc.next().charAt(1); 
+		 //error if only one char input given
+	//same effect if charAt(-1);	 
 	 System.out.println(ch);
 	}
 }
