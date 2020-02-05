@@ -10,3 +10,6 @@ class Main{
 	 		System.out.println(a);
 	}	
 }
+//output
+//0
+//hellouf
