@@ -5,3 +5,8 @@ class Main{
 			System.out.print(a);
 	}
 }
+//error: bad operand types for binary operator '<'
+		if(a<b<c)
+		      ^
+  first type:  boolean
+  second type: int
