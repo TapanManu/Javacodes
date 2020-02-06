@@ -8,3 +8,5 @@ class Main{
 		}
 	}
 }
+//output
+//1
