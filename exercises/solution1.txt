@@ -1,0 +1,2894 @@
+1. Which of these package is used for graphical user interface?
+a) java.applet
+b) java.awt
+c) java.awt.image
+d) java.io
+View Answer
+Answer: b
+Explanation: java.awt provides capabilities for graphical user interface.
+ 
+2.  Which of this package is used for handling security related issues in a program?
+a) java.security
+b) java.lang.security
+c) java.awt.image
+d) java.io.security
+View Answer
+Answer: a
+Explanation: java.security handles certificates, keys, digests, signatures, and other security functions.
+ 
+3. Which of this package is used for invoking a method remotely?
+a) java.rmi
+b) java.awt
+c) java.util
+d) java.applet
+View Answer
+Answer: a
+Explanation: java.rmi provides capabilities for remote method invocation.
+This Section of our 1000+ Java MCQs focuses on Integer and Floating Datatypes of Java Programming Language.
+4. What is the range of short data type in Java?
+a) -128 to 127
+b) -32768 to 32767
+c) -2147483648 to 2147483647
+d)  View Answer
+Answer: b
+Explanation: Short occupies 16 bits in memory. Its range is from -32768 to 32767.
+5. What is the range of byte data type in Java?
+a) -128 to 127
+b) -32768 to 32767
+c) -2147483648 to 2147483647
+d) None of the mentioned
+View Answer
+Answer: a
+Explanation: Byte occupies 8 bits in memory. Its range is from -128 to 127.
+6. Which of the following are legal lines of Java code?
+1. int w = (int)888.8;
+2. byte x = (byte)100L;
+3. long y = (byte)100;
+4. byte z = (byte)100L;
+a) 1 and 2
+b) 2 and 3
+c) 3 and 4
+d) All statements are correct
+View Answer
+Answer: d
+Explanation: Statements (1), (2), (3), and (4) are correct. (1) is correct because when a floating-point number (a double in this case) is cast to an int, it simply loses the digits after the decimal. (2) and (4) are correct because a long can be cast into a byte. If the long is over 127, it loses its most significant (leftmost) bits. (3) actually works, even though a cast is not necessary, because a long can store a byte.
+7. An expression involving byte, int, and literal numbers is promoted to which of these?
+a) int
+b) long
+c) byte
+d) float
+View Answer
+Answer: a
+Explanation: An expression involving bytes, ints, shorts, literal numbers, the entire expression is promoted to int before any calculation is done.
+8. Which of these literals can be contained in float data type variable?
+a) -1.7e+308
+b) -3.4e+038
+c) +1.7e+308
+d) -3.4e+050
+View Answer
+Answer: b
+Explanation: Range of float data type is -(3.4e38) To +(3.4e38)
+9. Which data type value is returned by all transcendental math functions?
+a) int
+b) float
+c) double
+d) long
+View Answer
+Answer: c
+Explanation: None.
+ 
+10.  What will be the output of the following Java statement?
+ 
+class output {
+public static void main(String args[])
+{
+double a, b,c;
+a = 3.0/0;
+b = 0/4.0;
+c=0/0.0;
+
+System.out.println(a);
+System.out.println(b);
+System.out.println(c);
+}
+}
+a) Infinity
+b) 0.0
+c) NaN
+d) all of the mentioned
+View Answer
+Answer: d
+Explanation: For floating point literals, we have constant value to represent (10/0.0) infinity either positive or negative and also have NaN (not a number for undefined like 0/0.0), but for the integral type, we don’t have any constant that’s why we get an arithmetic exception.
+11. What will be the output of the following Java code?
+class increment {
+public static void main(String args[])
+{
+int g = 3;
+System.out.print(++g * 8);
+}
+}
+a) 25
+b) 24
+c) 32
+d) 33
+View Answer
+Answer: c
+Explanation: Operator ++ has more preference than *, thus g becomes 4 and when multiplied by 8 gives 32.
+output:
+$ javac increment.java
+$ java increment
+32
+12. What will be the output of the following Java code?
+class area {
+public static void main(String args[])
+{
+double r, pi, a;
+r = 9.8;
+pi = 3.14;
+a = pi * r * r;
+System.out.println(a);
+}
+}
+a) 301.5656
+b) 301
+c) 301.56
+d) 301.56560000
+View Answer
+Answer: a
+Explanation: None.
+output:
+$ javac area.java
+$ java area
+301.5656
+13. What is the numerical range of a char data type in Java?
+a) -128 to 127
+b) 0 to 256
+c) 0 to 32767
+d) 0 to 65535
+View Answer
+Answer: d
+Explanation: Char occupies 16-bit in memory, so it supports 216 i:e from 0 to 65535.
+14. Which of these coding types is used for data type characters in Java?
+a) ASCII
+b) ISO-LATIN-1
+c) UNICODE
+d) None of the mentioned
+View Answer
+Answer: c
+Explanation: Unicode defines fully international character set that can represent all the characters found in all human languages. Its range is from 0 to 65536.
+15. Which of these values can a boolean variable contain?
+a) True & False
+b) 0 & 1
+c) Any integer value
+d) true
+View Answer
+Answer: a
+Explanation: Boolean variable can contain only one of two possible values, true and false.
+16. Which of these occupy first 0 to 127 in Unicode character set used for characters in Java?
+a) ASCII
+b) ISO-LATIN-1
+c) None of the mentioned
+d) ASCII and ISO-LATIN1
+View Answer
+Answer: d
+Explanation: First 0 to 127 character set in Unicode are same as those of ISO-LATIN-1 and ASCII.
+17. Which one is a valid declaration of a boolean?
+a) boolean b1 = 1;
+b) boolean b2 = ‘false’;
+c) boolean b3 = false;
+d) boolean b4 = ‘true’
+View Answer
+Answer: c
+Explanation: Boolean can only be assigned true or false literals.
+ 
+18. What will be the output of the following Java program?
+class mainclass {
+public static void main(String args[])
+{
+char a = 'A';
+a++;
+System.out.print((int)a);
+}
+}
+a) 66
+b) 67
+c) 65
+d) 64
+View Answer
+Answer: a
+Explanation: ASCII value of ‘A’ is 65, on using ++ operator character value increments by one.
+output:
+$ javac mainclass.java
+$ java mainclass
+66
+19. What will be the output of the following Java program?
+ 
+    1. class mainclass {
+public static void main(String args[])
+{
+boolean var1 = true;
+boolean var2 = false;
+if (var1)
+System.out.println(var1);
+else
+System.out.println(var2);
+}
+}
+a) 0
+b) 1
+c) true
+d) false
+View Answer
+Answer: c
+Explanation: None.
+output:
+$ javac mainclass.java
+$ java mainclass
+true
+20. What will be the output of the following Java code?
+class booloperators {
+public static void main(String args[])
+{
+boolean var1 = true;
+boolean var2 = false;
+System.out.println((var1 & var2));
+}
+}
+a) 0
+b) 1
+c) true
+d) false
+View Answer
+Answer: d
+Explanation: boolean ‘&’ operator always returns true or false. var1 is defined true and var2 is defined false hence their ‘&’ operator result is false.
+output:
+$ javac booloperators.java
+$ java booloperators
+false
+21. What will be the output of the following Java code?
+class asciicodes {
+public static void main(String args[])
+{
+char var1 = 'A';
+char var2 = 'a';
+System.out.println((int)var1 + " " + (int)var2);
+}
+}
+a) 162
+b) 65 97
+c) 67 95
+d) 66 98
+View Answer
+Answer: b
+Explanation: ASCII code for ‘A’ is 65 and for ‘a’ is 97.
+output:
+$ javac asciicodes.java
+$ java asciicodes
+65 97
+22.. Which of these is long data type literal?
+a) 0x99fffL
+b) ABCDEFG
+c) 0x99fffa
+d) 99671246
+View Answer
+Answer: a
+Explanation: Data type long literals are appended by an upper or lowercase L. 0x99fffL is hexadecimal long literal.
+23. Which of these can be returned by the operator &?
+a) Integer
+b) Boolean
+c) Character
+d) Integer or Boolean
+View Answer
+Answer: d
+Explanation: We can use binary ampersand operator on integers/chars (and it returns an integer) or on booleans (and it returns a boolean).
+ 
+24. Literal can be of which of these data types?
+a) integer
+b) float
+c) boolean
+d) all of the mentioned
+View Answer
+Answer: d
+Explanation: None
+25. Which of these can not be used for a variable name in Java?
+a) identifier
+b) keyword
+c) identifier & keyword
+d) none of the mentioned
+View Answer
+Answer: b
+Explanation: Keywords are specially reserved words which can not be used for naming a user defined variable, example: class, int, for etc.
+ 
+26. What will be the output of the following Java program?
+class variable_scope
+{
+public static void main(String args[])
+{
+int x;
+x = 5;
+{
+int y = 6;
+System.out.print(x + " " + y);
+}
+System.out.println(x + " " + y);
+}
+}
+a) 5 6 5 6
+b) 5 6 5
+c) Runtime error
+d) Compilation error
+View Answer
+Answer: d
+Explanation: Second print statement doesn’t have access to y , scope y was limited to the block defined after initialization of x.
+output:
+$ javac variable_scope.java
+Exception in thread "main" java.lang.Error: Unresolved compilation problem: y cannot be resolved to a variable
+27.  Which of these is an incorrect string literal?
+a) “Hello World”
+b) “Hello\nWorld”
+c) “\”Hello World\””
+d)
+"Hello
+world"
+View Answer
+Answer: d
+Explanation: All string literals must begin and end in the same line.
+
+
+ 28. What will be the output of the following Java program?
+class dynamic_initialization
+{
+public static void main(String args[])
+{
+double a, b;
+a = 3.0;
+b = 4.0;
+double c = Math.sqrt(a * a + b * b);
+System.out.println(c);
+}
+}
+a) 5.0
+b) 25.0
+c) 7.0
+d) Compilation Error
+View Answer
+Answer: a
+Explanation: Variable c has been dynamically initialized to square root of a * a + b * b, during run time.
+output:
+$ javac dynamic_initialization.java
+$ java dynamic_initialization
+5.0
+29.  Which of these is necessary condition for automatic type conversion in Java?
+a) The destination type is smaller than source type
+b) The destination type is larger than source type
+c) The destination type can be larger or smaller than source type
+d) None of the mentioned
+View Answer
+Answer: b
+Explanation: None.
+ 
+30. What will be the error in the following Java code?
+    byte b = 50;
+    b = b * 50;
+a) b cannot contain value 100, limited by its range
+b) * operator has converted b * 50 into int, which can not be converted to byte without casting
+c) b cannot contain value 50
+d) No error in this code
+View Answer
+Answer: b
+Explanation: While evaluating an expression containing int, bytes or shorts, the whole expression is converted to int then evaluated and the result is also of type int.
+31. If an expression contains double, int, float, long, then the whole expression will be promoted into which of these data types?
+a) long
+b) int
+c) double
+d) float
+View Answer
+Answer: c
+Explanation: If any operand is double the result of an expression is double.
+32. What is Truncation is Java?
+a) Floating-point value assigned to an integer type
+b) Integer value assigned to floating type
+c) Floating-point value assigned to an Floating type
+d) Integer value assigned to floating type
+View Answer
+33.. What will be the output of the following Java code?
+  class char_increment 
+    {
+        public static void main(String args[]) 
+        {
+            char c1 = 'D';
+            char c2 = 84;
+            c2++;
+            c1++;
+            System.out.println(c1 + " "  + c2);
+        } 
+    }
+a) E U
+b) U E
+c) V E
+d) U F
+View Answer
+Answer: a
+Explanation: Operator ++ increments the value of character by 1. c1 and c2 are given values D and 84, when we use ++ operator their values increments by 1, c1 and c2 becomes E and U respectively.
+output:
+$ javac char_increment.java
+$ java char_increment
+E U
+34. What will be the output of the following Java code?
+    class conversion 
+    {
+        public static void main(String args[]) 
+        {
+            double a = 295.04;
+            int  b = 300;
+            byte c = (byte) a;
+            byte d = (byte) b;
+            System.out.println(c + " "  + d);
+        } 
+    }
+a) 38 43
+b) 39 44
+c) 295 300
+d) 295.04 300
+View Answer
+Answer: b
+Explanation: Type casting a larger variable into a smaller variable results in modulo of larger variable by range of smaller variable. b contains 300 which is larger than byte’s range i:e -128 to 127 hence d contains 300 modulo 256 i:e 44.
+output:
+$ javac conversion.java
+$ java conversion
+39 44
+ 
+36. What will be the output of the following Java program, if we run as “java main_arguments 1 2 3”?
+    class main_arguments 
+    {
+        public static void main(String [] args) 
+        {
+            String [][] argument = new String[2][2];
+            int x;
+            argument[0] = args;
+            x = argument[0].length;
+            for (int y = 0; y < x; y++) 
+                System.out.print(" " + argument[0][y]);              
+        }
+    }
+a) 1 1
+b) 1 0
+c) 1 0 3
+d) 1 2 3
+View Answer
+Answer: d
+Explanation: In argument[0] = args;, the reference variable arg[0], which was referring to an array with two elements, is reassigned to an array (args) with three elements.
+Output:
+$ javac main_arguments.java
+$ java main_arguments
+1 2 3
+37. What will be the output of the following Java program?
+    class c 
+    {    
+        public void main( String[] args ) 
+        {  
+            System.out.println( "Hello" + args[0] ); 
+        } 
+    }
+a) Hello c
+b) Hello
+c) Hello world
+d) Runtime Error
+View Answer
+Answer: d
+Explanation: A runtime error will occur owning to the main method of the code fragment not being declared static.
+Output:
+$ javac c.java
+Exception in thread "main" java.lang.NoSuchMethodError: main
+
+38. Which of the following can be operands of arithmetic operators?
+a) Numeric
+b) Boolean
+c) Characters
+d) Both Numeric & Characters
+View Answer
+Answer: d
+Explanation: The operand of arithmetic operators can be any of numeric or character type, But not boolean.
+39. Modulus operator, %, can be applied to which of these?
+a) Integers
+b) Floating – point numbers
+c) Both Integers and floating – point numbers
+d) None of the mentioned
+View Answer
+Answer: c
+Explanation: Modulus operator can be applied to both integers and floating point numbers.
+40.  With x = 0, which of the following are legal lines of Java code for changing the value of x to 1?
+   1. x++;
+   2. x = x + 1;
+   3. x += 1;
+   4. x =+ 1;
+a) 1, 2 & 3
+b) 1 & 4
+c) 1, 2, 3 & 4
+d) 3 & 2
+View Answer
+Answer: c
+Explanation: Operator ++ increases value of variable by 1. x = x + 1 can also be written in shorthand form as x += 1. Also x =+ 1 will set the value of x to 1.
+41. Decrement operator, −−, decreases the value of variable by what number?
+a) 1
+b) 2
+c) 3
+d) 4
+View Answer
+Answer: a
+Explanation: None.
+42. Which of these statements are incorrect?
+a) Assignment operators are more efficiently implemented by Java run-time system than their equivalent long forms
+b) Assignment operators run faster than their equivalent long forms
+c) Assignment operators can be used only with numeric and character data type
+d) None of the mentioned
+View Answer
+Answer: d
+Explanation: None.
+43. What will be the output of the following Java program?
+              class increment 
+    {
+        public static void main(String args[])
+        {
+            double var1 = 1 + 5; 
+            double var2 = var1 / 4;
+            int var3 = 1 + 5;
+            int var4 = var3 / 4;
+            System.out.print(var2 + " " + var4);
+ 
+        } 
+    }
+a) 1 1
+b) 0 1
+c) 1.5 1
+d) 1.5 1.0
+View Answer
+Answer: c
+Explanation: None
+output:
+$ javac increment.java
+$ java increment
+1.5 1
+44. What will be the output of the following Java program?
+advertisement
+    1.     class Modulus 
+    {
+        public static void main(String args[]) 
+        {    
+             double a = 25.64;
+             int  b = 25;
+             a = a % 10;
+             b = b % 10;
+             System.out.println(a + " "  + b);
+        } 
+    }
+a) 5.640000000000001 5
+b) 5.640000000000001 5.0
+c) 5 5
+d) 5 5.640000000000001
+View Answer
+Answer: a
+Explanation: Modulus operator returns the remainder of a division operation on the operand. a = a % 10 returns 25.64 % 10 i:e 5.640000000000001. Similarly b = b % 10 returns 5.
+output:
+$ javac Modulus.java
+$ java Modulus
+5.640000000000001 5
+45. What will be the output of the following Java program?
+    class increment 
+    {
+        public static void main(String args[]) 
+        {        
+             int g = 3;
+             System.out.print(++g * 8);
+        } 
+    }
+a) 25
+b) 24
+c) 32
+d) 33
+View Answer
+Answer: c
+Explanation: Operator ++ has more preference than *, thus g becomes 4 and when multiplied by 8 gives 32.
+output:
+$ javac increment.java
+$ java increment
+32
+46. Can 8 byte long data type be automatically type cast to 4 byte float data type?
+a) True
+b) False
+View Answer
+Answer: a
+Explanation: Both data types have different memory representation that’s why 8-byte integral data type can be stored to 4-byte floating point data type.
+47.. What will be the output of the following Java program?
+    class Output 
+    {
+        public static void main(String args[]) 
+        {    
+             int a = 1;
+             int b = 2;
+             int c;
+             int d;
+             c = ++b;
+             d = a++;
+             c++;
+             b++;
+             ++a;
+             System.out.println(a + " " + b + " " + c);
+        } 
+    }
+a) 3 2 4
+b) 3 2 3
+c) 2 3 4
+d) 3 4 4
+View Answer
+Answer: d
+Explanation: None.
+output:
+$ javac Output.java
+$ java Output
+3 4 4
+48. Which of these is not a bitwise operator?
+a) &
+b) &=
+c) |=
+d) <=
+View Answer
+Answer: d
+Explanation: <= is a relational operator.
+49.  Which operator is used to invert all the digits in a binary representation of a number?
+a) ~
+b) <<<
+c) >>>
+d) ^
+View Answer
+Answer: a
+Explanation: Unary not operator, ~, inverts all of the bits of its operand in binary representation.
+50. On applying Left shift operator, <<, on integer bits are lost one they are shifted past which position bit?
+a) 1
+b) 32
+c) 33
+d) 31
+View Answer
+Answer: d
+Explanation: The left shift operator shifts all of the bits in a value to the left specified number of times. For each shift left, the high order bit is shifted out and lost, zero is brought in from the right. When a left shift is applied to an integer operand, bits are lost once they are shifted past the bit position 31.
+51. Which right shift operator preserves the sign of the value?
+a) <<
+b) >>
+c) <<=
+d) >>=
+View Answer
+Answer: b
+Explanation: None.
+52. Which of these statements are incorrect?
+a) The left shift operator, <<, shifts all of the bits in a value to the left specified number of times
+b) The right shift operator, >>, shifts all of the bits in a value to the right specified number of times
+c) The left shift operator can be used as an alternative to multiplying by 2
+d) The right shift operator automatically fills the higher order bits with 0
+View Answer
+Answer: d
+Explanation: The right shift operator automatically fills the higher order bit with its previous contents each time a shift occurs. This also preserves the sign of the value.
+53.. What will be the output of the following Java program?
+    class bitwise_operator 
+    {
+        public static void main(String args[])
+        {
+            int var1 = 42;
+            int var2 = ~var1;
+            System.out.print(var1 + " " + var2);     	
+        } 
+    }
+a) 42 42
+b) 43 43
+c) 42 -43
+d) 42 43
+View Answer
+Answer: c
+Explanation: Unary not operator, ~, inverts all of the bits of its operand. 42 in binary is 00101010 in using ~ operator on var1 and assigning it to var2 we get inverted value of 42 i:e 11010101 which is -43 in decimal.
+output:
+$ javac bitwise_operator.java
+$ java bitwise_operator
+42 -43
+54.  What will be the output of the following Java program?
+    class bitwise_operator 
+    {
+        public static void main(String args[]) 
+        {    
+             int a = 3;
+             int b = 6;
+ 	     int c = a | b;
+             int d = a & b;             
+             System.out.println(c + " "  + d);
+        } 
+    }
+a) 7 2
+b) 7 7
+c) 7 5
+d) 5 2
+View Answer
+Answer: a
+Explanation: And operator produces 1 bit if both operand are 1. Or operator produces 1 bit if any bit of the two operands in 1.
+output:
+advertisement
+$ javac bitwise_operator.java
+$ java bitwise_operator
+7 2
+55. What will be the output of the following Java program?
+    class leftshift_operator 
+    {
+        public static void main(String args[]) 
+        {        
+             byte x = 64;
+             int i;
+             byte y; 
+             i = x << 2;
+             y = (byte) (x << 2)
+             System.out.print(i + " " + y);
+        } 
+    1.     }
+a) 0 64
+b) 64 0
+c) 0 256
+d) 256 0
+View Answer
+Answer: d
+Explanation: None.
+output:
+$ javac leftshift_operator.java
+$ java leftshift_operator
+256 0
+56.  What will be the output of the following Java program?
+    class rightshift_operator 
+    {
+        public static void main(String args[]) 
+        {    
+             int x; 
+             x = 10;
+             x = x >> 1;
+             System.out.println(x);
+        } 
+    }
+a) 10
+b) 5
+c) 2
+d) 20
+View Answer
+Answer: b
+Explanation: Right shift operator, >>, devides the value by 2.
+output:
+$ javac rightshift_operator.java
+$ java rightshift_operator
+5
+57.. What will be the output of the following Java program?
+    class Output 
+    {
+        public static void main(String args[]) 
+        {    
+             int a = 1;
+             int b = 2;
+             int c = 3;
+             a |= 4;
+             b >>= 1;
+             c <<= 1;
+             a ^= c;
+             System.out.println(a + " " + b + " " + c);
+        } 
+    }
+a) 3 1 6
+b) 2 2 3
+c) 2 3 4
+d) 3 3 6
+View Answer
+Answer: a
+Explanation: None.
+output:
+$ javac Output.java
+$ java Output
+3 1 6
+ 
+58. What is the output of relational operators?
+a) Integer
+b) Boolean
+c) Characters
+d) Double
+View Answer
+Answer: b
+Explanation: None.
+59.  Which of these is returned by “greater than”, “less than” and “equal to” operators?
+a) Integers
+b) Floating – point numbers
+c) Boolean
+d) None of the mentioned
+View Answer
+Answer: c
+Explanation: All relational operators return a boolean value ie. true and false.
+60. Which of the following operators can operate on a boolean variable?
+   1. &&
+   2. ==
+   3. ?:
+   4. +=
+a) 3 & 2
+b) 1 & 4
+c) 1, 2 & 4
+d) 1, 2 & 3
+View Answer
+Answer: d
+Explanation: Operator Short circuit AND, &&, equal to, == , ternary if-then-else, ?:, are boolean logical operators. += is an arithmetic operator it can operate only on numeric values.
+61!a) !
+b) |
+c) &
+d) &&
+View Answer
+Answer: d
+Explanation: Operator short circuit and, &&, and short circuit or, ||, skip evaluating right hand operand when output can be determined by left operand alone.
+62. Which of these statements is correct?
+a) true and false are numeric values 1 and 0
+b) true and false are numeric values 0 and 1
+c) true is any non zero value and false is 0
+d) true and false are non numeric values
+View Answer
+Answer: d
+Explanation: True and false are keywords, they are non numeric values which do not relate to zero or non zero numbers. true and false are boolean values.
+63. What will be the output of the following Java code?
+    class Relational_operator 
+    {
+        public static void main(String args[])
+        {
+            int var1 = 5; 
+            int var2 = 6;
+            System.out.print(var1 > var2);
+        } 
+    }
+a) 1
+b) 0
+c) true
+d) false
+View Answer
+Answer: d
+Explanation: Operator > returns a boolean value. 5 is not greater than 6 therefore false is returned.
+output:
+$ javac Relational_operator.java
+$ java Relational_operator
+false
+64. What will be the output of the following Java code?
+    class bool_operator 
+    {
+        public static void main(String args[]) 
+        {    
+             boolean a = true;
+             boolean b = !true;
+             boolean c = a | b;
+ 	     boolean d = a & b;
+             boolean e = d ? b : c;
+             System.out.println(d + " " + e);
+        } 
+    }
+a) false false
+b) true ture
+c) true false
+d) false true
+View Answer
+Answer: d
+Explanation: Operator | returns true if any one operand is true, thus ‘c = true | false’ is true. Operator & returns a true if both of the operand is true thus d is false. Ternary operator ?: assigns left of ‘:’ if condition is true and right hand of ‘:’ if condition is false. d is false thus e = d ? b : c , assigns c to e , e contains true.
+output:
+$ javac bool_operator.java
+$ java bool_operator
+false true
+65. What will be the output of the following Java code?
+    class ternary_operator 
+    {
+        public static void main(String args[]) 
+        {        
+             int x = 3;
+             int y = ~ x;
+             int z;
+             z = x > y ? x : y;
+             System.out.print(z);
+        } 
+    }
+a) 0
+b) 1
+c) 3
+d) -4
+View Answer
+Answer: c
+Explanation: None.
+output:
+66. Which of these have highest precedence?
+a) ()
+b) ++
+c) *
+d) >>
+View Answer
+Answer: a
+Explanation: Order of precedence is (highest to lowest) a -> b -> c -> d.
+67. What should be expression1 evaluate to in using ternary operator as in this line?
+ expression1 ?  expression2  :  expression3
+a) Integer
+b) Floating – point numbers
+c) Boolean
+d) None of the mentioned
+View Answer
+Answer: c
+Explanation: The controlling condition of ternary operator must evaluate to boolean.
+68. What is the value stored in x in the following lines of Java code?
+   int x, y, z;
+    x = 0;
+    y = 1;
+    x = y = z = 8;
+a) 0
+b) 1
+c) 9
+d) 8
+View Answer
+Answer: d
+Explanation: None.
+69. What is the order of precedence (highest to lowest) of following operators?
+    1. &    
+    2. ^
+    3. ?:
+a) 1 -> 2 -> 3
+b) 2 -> 1 -> 3
+c) 3 -> 2 -> 1
+d) 2 -> 3 -> 1
+View Answer
+Answer: a
+Explanation: None.
+70. Which of these statements are incorrect?
+a) Equal to operator has least precedence
+b) Brackets () have highest precedence
+c) Division operator, /, has higher precedence than multiplication operator
+d) Addition operator, +, and subtraction operator have equal precedence
+View Answer
+Answer: c
+Explanation: Division operator, /, has equal precedence as of multiplication operator. In expression involving multiplication and division evaluation of expression will begin from the right side when no brackets are used.
+71. What will be the output of the following Java code?
+    class operators 
+    {
+        public static void main(String args[])
+        {
+            int var1 = 5; 
+            int var2 = 6;
+            int var3;
+            var3 = ++ var2 * var1 / var2 + var2;
+            System.out.print(var3);
+        } 
+    }
+a) 10
+b) 11
+c) 12
+d) 56
+View Answer
+Answer: c
+Explanation: Operator ++ has the highest precedence than / , * and +. var2 is incremented to 7 and then used in expression, var3 = 7 * 5 / 7 + 7, gives 12.
+output:
+$ javac operators.java
+$ java operators
+12
+72. What will be the output of the following Java code?
+    class operators 
+    {
+        public static void main(String args[]) 
+        {    
+             int x = 8;
+             System.out.println(++x * 3 + " " + x);
+        } 
+    }
+a) 24 8
+b) 24 9
+c) 27 8
+d) 27 9
+View Answer
+Answer: d
+Explanation: Operator ++ has higher precedence than multiplication operator, *, x is incremented to 9 than multiplied with 3 giving 27.
+output:
+advertisement
+$ javac operators.java
+$ java operators
+27 9
+73. What will be the output of the following Java code?
+    1. class Output 
+    2. {
+    3.         public static void main(String args[]) 
+    4.         {    
+    5.              int x=y=z=20;
+    6.  
+    7.         } 
+    8. }
+a) compile and runs fine
+b) 20
+c) run time error
+d) compile time error
+View Answer
+Answer: d
+Explanation: None.
+74. Which of these lines of Java code will give better performance?
+   1. a | 4 + c >> b & 7; 
+   2. (a | ((( 4 * c ) >> b ) & 7 ))
+a) 1 will give better performance as it has no parentheses
+b) 2 will give better performance as it has parentheses
+c) Both 1 & 2 will give equal performance
+d) Dependent on the computer system
+View Answer
+Answer: c
+Explanation: Parentheses do not degrade the performance of the program. Adding parentheses to reduce ambiguity does not negatively affect your system.
+75.  What will be the output of the following Java program?
+class Output 
+{
+        public static void main(String args[]) 
+        {    
+             int a,b,c,d;
+             a=b=c=d=20
+            a+=b-=c*=d/=20
+           System.out.println(a+" "+b+" "+c+" "+d);
+ 
+        } 
+}
+a) compile time error
+b) runtime error
+c) a=20 b=0 c=20 d=1
+d) none of the mentioned
+View Answer
+Answer: c
+Explanation: Expression will evaluate from right to left.
+output:
+$ javac Output.java
+$ java Output
+20 0 20 1
+76. Which component is used to compile, debug and execute java program?
+a) JVM
+b) JDK
+c) JIT
+d) JRE
+View Answer
+Answer: b
+Explanation: JDK is a core component of Java Environment and provides all the tools, executables and binaries required to compile, debug and execute a Java Program.
+77.  Which component is responsible for converting bytecode into machine specific code?
+a) JVM
+b) JDK
+c) JIT
+d) JRE
+View Answer
+Answer: a
+Explanation: JVM is responsible to converting bytecode to the machine specific code. JVM is also platform dependent and provides core java functions like garbage collection, memory management, security etc.
+78.  Which component is responsible to run java program?
+a) JVM
+b) JDK
+c) JIT
+d) JRE
+View Answer
+Answer: d
+Explanation: JRE is the implementation of JVM, it provides platform to execute java programs.
+79. Which component is responsible to optimize bytecode to machine code?
+a) JVM
+b) JDK
+c) JIT
+d) JRE
+View Answer
+Answer: c
+Explanation: JIT optimizes bytecode to machine specific language code by compiling similar bytecodes at the same time. This reduces overall time taken for compilation of bytecode to machine specific language.
+80. Which statement is true about java?
+a) Platform independent programming language
+b) Platform dependent programming language
+c) Code dependent programming language
+d) Sequence dependent programming language
+View Answer
+Answer: a
+Explanation: Java is called ‘Platform Independent Language’ as it primarily works on the principle of ‘compile once, run everywhere’.
+81. Which of the below is invalid identifier with the main method?
+a) public
+b) static
+c) private
+d) final
+View Answer
+Answer: c
+Explanation: main method cannot be private as it is invoked by external method. Other identifier are valid with main method.
+82. What is the extension of java code files?
+a) .class
+b) .java
+c) .txt
+d) .js
+View Answer
+Answer: b
+Explanation: Java files have .java extension.
+advertisement
+83. What is the extension of compiled java classes?
+a) .class
+b) .java
+c) .txt
+d) .js
+View Answer
+Answer: a
+Explanation: The compiled java files have .class extension.
+84. How can we identify whether a compilation unit is class or interface from a .class file?
+a) Java source file header
+b) Extension of compilation unit
+c) We cannot differentiate between class and interface
+d) The class or interface name should be postfixed with unit type
+View Answer
+Answer: a
+Explanation: The Java source file contains a header that declares the type of class or interface, its visibility with respect to other classes, its name and any superclass it may extend, or interface it implements.
+85. What is use of interpreter?
+a) They convert bytecode to machine language code
+b) They read high level code and execute them
+c) They are intermediated between JIT and JVM
+d) It is a synonym for JIT
+View Answer
+Answer: b
+Explanation: Interpreters read high level language (interprets it) and execute the program. Interpreters are normally not passing through byte-code and jit compilation.
+
+86. What does a Data Type in Java refers to?
+    a) The place where data is stored
+    b) The technique how data is retreived
+    c) The type or variety of data being handled for reading and writing
+    d) None of the above
+ 
+87. Choose the wrong statement about Java programming?
+    a) Java supports unsigned integers
+    b) Java supports signed integers
+    c) Java supports signed char
+    d) None of the above
+ 
+A
+Explanation: 
+Only C language supports unsigned integers. Java does not support.
+88.  Which data type among the following is an implementation of Objects or OOPs?
+    a) byte
+    b) int
+    c) char
+    d) None of the above
+ 
+D
+Explanation: 
+All primitive data types are implemented in a Non-Object Oriented way.
+88. What is a Primitive Data Type in Java?
+    a) Data type, which is implemented in an Object-oriented way.
+    b) Data Type which is implemented in a machine-dependent way
+    c) Data Type which is implemented in a non-object oriented way.
+    d) None of the above
+ 
+C
+89. which among the following is not a Data Type in Java?
+        a) short
+        b) int
+        c) long double
+        d) double	
+ 
+C
+Explanation:  "long double" is present only in C language.
+90.  Which among the following is not a valid Data Type in Java?
+        a. long
+        b. bool
+        c. double
+        d. float
+ 
+B
+Explanation:  It is "boolean" not "bool".
+91. Which is the data type used mostly to handle streams and buffers in Java language?
+        a. short
+        b. int
+        c. byte
+        d. float
+ 
+C
+92. Which is the data type that is not recommended for numeric applications in Java?
+        a. byte
+        b. float
+        c. int
+        d. long
+ 
+A
+Explanation:  Size of a byte is only 8 bits. Also, any arithmetic operation produces output in int, float or double. It cannot handle more data.
+ 
+93.  What is the size of a boolean data type constant in Java?
+A) 1 bit
+B) 4 bits
+C) 8 bits
+D) Not documented well
+Answer [=]
+D
+Explanation:  A boolean value can hold only one bit of information. But the size of a boolean constant in memory is not defined clearly anywhere. It is machine dependent. It may be 4 bytes or so.
+95. What is the IEEE standard adopted to represent Floating point numbers in Java?
+A) IEEE 9000
+B) IEEE 800
+C) IEEE 754
+D) IEEE 512
+Answer [=]
+C
+Explanation:  IEEE stands for Institute of Electrical and Electronics Engineers. Original specifications were defined in the year 1985. The current version includes improvements or corrections done in the year 2008.
+96. What is the character encoding standard used in Java language?
+        a. ASCII
+        b. Unicode
+        c. Hexacode
+        d. Bytecode
+ 
+C
+Explanation:  Unicode takes 2 Bytes of memory to represent all characters of all languages.
+97. What is the abbreviation of ASCII?
+        a. American Standard Characters for Information Interchange
+        b. Australian Standard Code for Information Interchange
+        c. American Standard Code for Information Interchange
+        d. None of the above
+Answer [=]
+C
+Explanation:  ASCII can represent only the English Alphabets and a few special symbols.
+98. Choose the right statement about Java Data types.
+        a. Integer data types are short, int and long
+        b. Real number data types are float and double
+        c. The character data type is char.
+        d. All the above
+Answer [=]
+D
+99. Java is a Successor to which programming language?
+A) B
+B) C
+C) C++
+D) D
+Answer [=]
+C
+Explanation:  C++ introduced OOPs (Object Oriented Programming) concepts which are adopted by Java.
+100. Who invented Java language?
+        a. Dennis Ritchie
+        b. James Gosling
+        c. Larry Page
+        d. Serge Page
+    b) Answer [=]
+B
+Explanation: 
+James Gosling along with his team members Mike Sheridan and Patrick Naughton developed Java language.
+101.  What is the original name of Java Programming language?
+        a. J++
+        b. C++
+        c. OAK
+        d. TEAK
+ 
+C
+Explanation:  Java was named after an OAK tree outside James Gosling's office.
+102. Which laboratory was Java invented or developed in?
+        a. Bell Laboratory
+        b. Sun Microsystems
+        c. Dennis Ritchie Office
+        d. Johnson and Johnson
+ 
+B
+Explanation: 
+NFS (Network File System) was also invented by SUN Microsystems.
+103. The name "JAVA" is known to the world as?
+        a. A Tea Brand in India
+        b. A Coffee Brand in Africa
+        c. An Island in Indonesia
+        d. Ragi Malt Juice
+ 
+C
+Explanation: 
+Indonesia is a group of Volcanic Islands with Java sea on one side.
+104. Java language was originally developed for operating?
+        a. TV
+        b. TV Set-top box
+        c. Embedded System equipment
+        d. All the above
+Answer [=]
+D
+105.  What type of Java Programs can be run inside a Java supported Web Browser?
+        a. Stand alone
+        b. Struts
+        c. Applets
+        d. AWT
+ 
+C
+106. Whic company owns Java at present?
+    a) IBM
+    b) Microsoft
+    c) Sun Microsystems
+    d) Oracle
+ 
+D
+Explanation:  Oracle acquired Sun Microsystems in the year 2010.
+107. What was the reason for huge initial success of Java?
+        a. WWW (World Wide Web)
+        b. Smart TV Evolution
+        c. Smart Home Automation
+        d. None of the above
+Answer [=]
+A
+Explanation:  World Wide Web is also known as the INTERNET.
+108. What is the advantage of EXE files?
+        a. Run Faster
+        b. Efficient
+        c. No separate program required to run
+        d. All the above
+ 
+D
+109.  Computer Viruses and Trojans are often transmitted along with which files?
+        a. JPG files
+        b. TXT files
+        c. EXE files
+        d. .ICO files
+ 
+C
+110.  What is the problem with generation Executable Software (EXE files)?
+        a. Run only on Windows machines.
+        b. Linux and Unix expect a different executable format than .EXE
+        c. Compiler for each machine type like Linux, Unix, Windows and Processor Type needs to be built for generating output files that can run.
+        d. All the above.
+Answer [=]
+D
+111.What is an Interpreter?
+        a. An interpreter converts instructions line by line
+        b. An Interpreter converts source code to low-level code
+        c. Interpreters are slow to execute
+        d. All the above
+Answer [=]
+D
+Explanation:  Opposite of Interpreter is a Compiler.
+112. What is a Compiler?
+        a. A Compiler converts all instructions in one go.
+        b. A compiler converts source code to low-level code
+        c. Compilers work fast
+        d. All the above
+Answer [=]
+D
+Explanation:  So a compiler is preferred to an Interpreter.
+ 
+ 
+ 
+ 
+113. Byte code is the result of?
+        a. Compiling a Java file
+        b. Compiling a Class file
+        c. Interpreting a Java File
+        d. Interpreting a Class file
+Answer [=]
+A
+114. What software compiles a Java Program?
+        a. JRE (Java Runtime Environment)
+        b. JDK (Java Developer Kit)
+        c. JVM (Java Virtual Machine)
+        d. Command Prompt
+Answer [=]
+B
+115. What software runs a Java program on a computer?
+        a. JRE (Java Runtime Environment)
+        b. JDK (Java Developer Kit)
+        c. Command Prompt
+        d. None of the above
+Answer [=]
+A
+  
+116.  What software compiles a Java Program?
+        a. JRE (Java Runtime Environment)
+        b. JDK (Java Developer Kit)
+        c. JVM (Java Virtual Machine)
+        d. Command Prompt
+Answer [=]
+B
+ 117. What does JVM stands for?
+        a. Java Variable Machine
+        b. Java Virtual Machine
+        c. Java Virtual Mechanism
+        d. None of the above
+Answer [=]
+B
+Explanation:  JRE Software creates JVM in the PC. JVM is implemented differently on different machines and hardware so that the Byte Code present in the Class file produces the same output.
+118. What is JVM ?
+        a. JVM is the confined memory area
+        b. All java programs run inside JVM memory
+        c. JVM provides security to the computer by giving controlled access to Files and Memory on a computer
+        d. All the above
+Answer [=]
+D
+
+119. What is Portability offered by Java language?
+        a. Small code size easy to carry occupying less disk space
+        b. Generating suitable Byte Code for each machine by the Compiler
+        c. Ability to run the Byte on different machines producing the same behaviour and output
+        d. Java does not actually provide portability
+Answer [=]
+C
+120.  What is JIT in Java?
+        a. Java In Timer
+        b. Java In Time Thread
+        c. Just In Time Compiler
+        d. Just In Time Runnable
+Answer [=]
+C
+121.  Choose the correct statement about Java?
+        a. JIT Compiler produces Byte Code from Java file.
+        b. JIT Compiler takes chunks of Byte Code as input and produces Executable code on that particular machine.
+        c. JIT Compiler assists the actual JAVAC compiler to compile fast
+        d. None of the above
+Answer [=]
+B
+122.  What happens in the absence of JIT Compiler in Java?
+        a. Byte code is produced slowly
+        b. Executable Code is produced slowly because of line by line Interpreting
+        c. Executable Code is produced without portability
+        d. None of the above
+Answer [=]
+B
+123.  What are the main Distribution types of Java Software?
+        a. Java SE (Java Standard Edition)
+        b. Java EE (Java Enterprise Edition)
+        c. Java ME (Java Micro Edition)
+        d. All the above
+Answer [=]
+D
+124. What is the Java distribution type used to build Web Apps in Java?
+        a. Java SE
+        b. Java EE
+        c. Java ME
+        d. Java Embedded
+B
+Explanation:  Java SE is used to build standalone apps with GUI. AWT and Swings are used mainly.
+Java ME is used on Embedded Chips like IOT devices, Vending Machines, Set Top Boxes, ATMs and all.
+125.  What is LTS mentioned along with Java Version names like Java SE 11 LTS?
+        a. LTS stands for Long Term Support
+        b. LTS Versions are patched for security vulnerabilities for up to 5 Years from the release date.
+        c. Java SE 8 LTS (supported up to March 2022) and Java SE 11 LTS  (supported up to September 2023) are available as of now.
+        d. All the above
+ 
+D
+126.  What is Ahead of Time Compiler in Java?
+        a. Ahead of time compiler compiles java files as and when you type and save.
+        b. Ahead of time compiler turns byte code to executable code line by line based on requirement
+        c. Ahead of time compiler is a replacement for JIT compiler to translate all byte code to a single executable file or code to run the program fast and efficient.
+        d. None of the above
+Answer [=]
+C
+127. What is the Java command used to compile a java program from Command Line or Command Prompt or CMD?
+        a. >java hello.java
+        b. >javac hello.java
+        c. >javacomp hello.java
+        d. >javacmd hello.java
+Answer [=]
+B
+128.  What is the command used to Run a Java program form Command Line or Command Prompt or CMD?
+        a. javac hello
+        b. java hello.class
+        c. java hello
+        d. java hello.java
+ 
+C
+Explanation:  "java" command expects only a Class Name without the file name extension like .class.
+129.  What is a Java Editor?
+        a. Java editor is simply an IDE like Notepad to type or edit java programs. It does not have ability Compiling or Running java programs without installing separate Java Packages on the PC.
+        b. Java editor is like Eclipse IDE that has shortcut options or buttons to compile and run java programs without using CMD or Command Line.
+        c. Java IDE searches for the installed Java location for JAVAC, JAVA and JAWAH to compile and run programs for you.
+        d. All the above
+Answer [=]
+D
+
+ 
+ 130. All methods and variables in Java language are kept inside a?
+        a. File
+        b. Class or Interface
+        c. static method
+        d. main
+ 
+B
+131.What is the need to mention "static" before main method?
+        a. To call main method without creating an object of class
+        b. To make main method as class method common to all instances
+        c. Both A and B
+        d. None of the above
+ 
+C
+132. In standalone Java applications, which method is mandatory?
+        a. main method
+        b. show method
+        c. display method
+        d. print method
+Answer [=]
+A
+Explanation: 
+main() is the starting point of execution.
+133. What is the use of Access modifier "pubic" in Java language?
+        a. To hide the main method from misuse
+        b. To call the main method outside of Class or Package by JVM
+        c. To protect main method
+        d. None of the above
+Answer [=]
+B
+134.  Choose a Single Line Comment in Java Language below?
+        a. //Some comments 
+        b. Some comments// 
+        c. /*Some comments*/ 
+        d. */Some comments/* 
+ 
+A
+135. Choose a multiline comment in Java language below?
+        a. /*comments are going cars are moving*/ 
+        b. */comments are going cars are moving/* 
+        c. //comments are going cars are moving// 
+        d. None of the above
+Answer [=]
+A
+136. String args[] in main method are used for? public static void main(String args[]) { // }
+        a. Passing arguments at compile time
+        b. Passing arguments at run time
+        c. Counting number of words
+        d. Nothing
+Answer [=]
+B
+Explanation: 
+C:/>java Hello AFRICA GOLDMINE
+Hello - Class name
+AFICA - First argument
+GOLDMINE - Second argument
+137.  What is the default return type of a method in Java language?
+        a. void
+        b. int
+        c. short
+        d. None of the above
+Answer [=]
+D
+Explanation:  You have to explicitly mention a return type.
+138. Name of a Class, Variable, Method or an Interface in Java language is called?
+A) Argument
+B) Value
+C) Identifier
+D) None of the above
+Answer [=]
+C
+139. A valid identifier in Java language may contain which characters?
+        a. 0-9
+        b. A-Z, a-z
+        c. $, _ (Underscore)
+        d. All the above
+Answer [=]
+D
+140. A valid Identifier or name in Java language can start with which character?
+        a. a-z, A-Z
+        b. $, _
+        c. 0-9
+        d. A and B
+Answer [=]
+D
+Explanation: 
+Up to JDK 8, only a single underscore symbol can be used as an identifier of a class, method or a variable. JDK 9 does not allow.
+141.  What are the valid White Spaces available in Java language?
+        a. Space
+        b. Enter
+        c. Tab
+        d. All the above
+Answer [=]
+D
+142. Choose a correct version of Java Documentation Comment?
+A) /* comments */ 
+B) /** comments */ 
+C) /* comments **/ 
+D) /** comments **/ 
+Answer [=]
+B
+Explanation:  Documentation comment allows writing notes about the program. javadoc commmand on the source java file generates a HTML Java documentation with the embedded comments.
+
+143. What is Literal in Java?
+        a. Literal is the value that is given or assigned to a variable.
+        b. Literal is a data type
+        c. Literal is similar to String
+        d. None of the above
+ 
+A
+Explanation:  Examples: 123, 45.67f, 'C', "abc", false
+144. What are the types of Literals available in Java language?
+        a. Integer and Float
+        b. Character and String
+        c. Boolean
+        d. All the above
+Answer [=]
+D
+Explanation:  Literals are Data assigned to Primitive data type variables.
+145.  What are the types of Integer Literals in Java?
+        a. Decimal Literals
+        b. Octal and Hexadecimal Literals
+        c. Binary Literals
+        d. All the above
+ 
+D
+Explanation:  JDK 7 introduced binary literals to easily set individual bits of a number.
+4) Choose correct examples of decimal literals in Java.
+        a. int a = 12345; 
+        b. int a = 12_3__5; 
+        c. long a = 987____654_3__21L; 
+        d. All the above	
+ 
+D
+Explanation:  To represent big numbers, simply append letter 'l' or 'L' to the number to make it a long integer. This avoids compiler errors saying "out of range"
+146. An Octal number is Java is represented with a leading ____?
+        a. O (Alphabet)
+        b. 0 (ZERO)
+        c. 0x
+        d. 0X
+ 
+B
+Explanation:  Eg. int a=0765;
+147. Choose correct ranges for Decimal, Octal and Hexadecimal numbers in Java?
+        a. Decimal: 0 to 9
+        b. Octal: 0 to 7
+        c. Hexadecimal: 0 to 9 and A to F / a to f
+        d. All the above
+ 
+D
+148. Choose the correct example of Octal Literal in Java?
+        a. short = 0564; 
+        b. int = 076__45_2; 
+        c. int = 0______11; 
+        d. All the above
+ 
+D
+Explanation:  int = 0______11; // 8^1 * 1 + 8^0 * 1 = 9
+ 
+ 149. Choose correct examples of Hexadecimal literals in Java?
+        a. long a = 0X987654321L; 
+        b. int a = 0x76FE____23; 
+        c. byte b = 0X0__________F; 
+        d. All the above
+ 
+ 
+150. What is the prefix used to represent Binary literals in Java?
+A) b or B
+B) 0b or 0B
+C) xB or xb
+D) ob or oB
+Answer [=]
+B
+Explanation: 
+ZERO B or ZERO b
+byte a = 0b00001111; //15 in decimal
+151. What is the correct representation of using Binary literals in Java?
+        a. int a = 0b1010; 
+        b. int a = 0B1011_1010; 
+        c. int a = 0B0______________1; 
+        d. All the above
+Answer [=]
+D
+Explanation: 
+int a = 0B0______________1; //decimal=1
+int b = 0b1010; //decimal=10
+152.  What is the compiler error for improperly using Underscores ( _ ) in literals in Java?
+        a. Underscores are out of range
+        b. IllegalUnderscoresException
+        c. Underscores have to be located within digits
+        d. Too many Underscores
+Answer [=]
+C
+Explanation: 
+Underscore symbols cannot be used at the beginning and the end of digits of a number.
+153. Choose a correct rule for using Underscores in literals of Java language.
+        a. Underscores cannot come at the end of a number or next to the last digit of a number.
+        b. Underscores cannot come at the beginning of a number or before the first digit of a number.
+        c. Underscores cannot come before or after a decimal point in real numbers like float and double.
+        d. All the above
+Answer [=]
+D
+Explanation:  Also, there is no limit on the number of underscores between digits.
+154.  What is the maximum number of Underscore characters that can be used in between the digits of a numeric literal in Java?
+        a. 8
+        b. 16
+        c. 32
+        d. No Limit
+ 
+D
+Explanation:  Theoretically, there is no limit on the number of underscores.
+ 155.  Java uses UTF-16 Unicode format to represent characters. What is UTF?
+        a. Universal Transcript Format
+        b. Universal Transformation Format
+        c. Universal Technology Format
+        d. None of the above
+ 
+B
+Explanation: 
+Unicode contains 65535 characters.
+156.  What is the name given to character literals in Java that start with a Back Slash character?
+        a. Back Slash Sequence
+        b. Slash Sequence
+        c. Escape Sequence
+        d. Extended Sequence
+ 
+C
+Explanation: 
+\b = backspace
+\n = new line
+\\ = backslash
+157.  What is the literal in Java that can be used to test whether an Object of any type is alive or not? 
+        a. alive
+        b. liveof
+        c. null
+        d. 0
+Answer [=]
+C
+Explanation:  String a;
+if(a==null)
+  System.out.println("Object destroyed");
+158.  What is the common UTF standard used on the Websites for information exchange?
+        a. UTF 16
+        b. UTF 8
+        c. UTF 32
+        d. None of the above
+Answer [=]
+B
+Explanation:  UTF 16 character encoding standard used by Java language is used only by the Windows internal system and JavaScript Library. Unix, Linux and MacOS use UTF-8 encoding standard.
+
+
+
+
+159. What is the suffix used to represent a floating point number in Java?
+A) r or R
+B) f or F
+C) fl or FL
+D) None of the above
+Answer [=]
+B
+Explanation: 
+float a = 1.345f;
+float b = 567.345678F;
+160.  What is the precision after decimal points offered by a float data type in Java?
+        a. 3 digits
+        b. 6 digits
+        c. 10 digits
+        d. 15 digits
+Answer [=]
+B
+Explanation: 
+float interest = 24.123456f;
+161. A real number literal for floating point literal with a missing f or F suffix represents which data type?
+        a. double
+        b. float
+        c. long
+        d. int
+Answer [=]
+A
+Explanation: 
+float a = 1.23; //error
+//can not convert from double to float
+
+float b = 1.23F // works
+double c = 1.567; //works
+162.  What is the suffix used to convert an int literal to long literal in Java?
+        a. 0l or 0L
+        b. l or L
+        c. i or I
+        d. 0x or 0X
+Answer [=]
+B
+Explanation: 
+int a = 987654; //works
+int b = 9876543210; //Out of range error
+long c = 9876543210;//Out of range error
+long d = 9876543210L; //works
+163.  A character literal in Java is enclosed within a pair of ___?
+        a. Square brackets
+        b. Double Quotes
+        c. Single Quotes
+        d. Exclamations
+Answer [=]
+C
+Explanation: 
+char ch='A';
+char ch2 = 'b';
+164. Which version of Java started offering unsigned int and unsigned long to represent very long numbers?
+        a. JDK 5
+        b. JDK 6
+        c. JDK 7
+        d. JDK 8
+Answer [=]
+D
+Explanation: 
+You have to use Object version of int and long namely Integer and Long to avail the feature. Using primitive data types, you can not create an unsigned int or unsigned long.
+165. Choose a correct statement about Java literal types.
+        a. Decimal literal uses Base 10 number system.
+        b. Binary literal uses Base 2 number system.
+        c. Octal literal uses Base 8 number system.
+        d. All the above
+Answer [=]
+D
+Explanation: 
+Hexadecimal literal uses Base 16 number system.
+166. A String literal in Java is surrounded by a pair of _____?
+        a. Braces
+        b. Single Quotes
+        c. Double Quotes
+        d. Exclamations
+Answer [=]
+C
+Explanation: 
+String name = "JAVA HERO";
+167.  Which among the following is not a primitive data type in Java?
+        a. char
+        b. String
+        c. byte
+        d. short
+ 
+B
+Explanation: 
+A string is a Class that can handle a string of characters or a group of characters. If the name of the type starts with an Uppercase letter, it is a Class. So it is non-primitive.
+ 
+168.  What are the two floating point notations in Java language?
+A) Exponential e or E (10^a)
+B) Exponential p or P (2^a)
+C) A and B
+D) None of the above
+Answer [=]
+C
+169.  Choose the correct implementation of floating point literals in the exponential form in Java.
+        a. float a = 12.0e2f; //1200.0 
+        b. float a = 100.0e-2f; // 1.0 
+        c. float a = 123.456e-21f; //1.23456E-19 
+        d. All the above
+Answer [=]
+D
+170. Choose the correct usage of boolean literal in the options below.
+        a. boolean b= false; 
+        b. boolean b= 2<4; //2<4 is true; 
+        c. if(true) { System.out.println("HELLO"); } 
+        d. All the above
+Answer [=]
+D
+171.  What is the output of this Java snippet? int a = 0b111; System.out.println(a); 
+        a. 111
+        b. 7
+        c. 8
+        d. Compiler error
+Answer [=]
+B
+Explanation: 
+1x2^2 + 1x2^1 + 1x2^0
+1x4 + 1x2 + 1
+4 + 2 + 1
+172.  Choose the wrong Java code statement below.
+        a. boolean a = false; 
+        b. boolean a = (5>6)||(4>3); 
+        c. boolean a = 1; 
+        d. boolean a = 4>3?true:false; 
+Answer [=]
+C
+Explanation: 
+You can not assign an integer value to a boolean data type. Java does not convert integers to boolean true or false.
+173.  Choose the wrong Java code statement below.
+        a. char a ='a'; 
+        b. char a ="ab"; 
+        c. char a =97; 
+        d. char a ='\u0123'; 
+Answer [=]
+B
+Explanation: 
+A character variable can hold only one letter that can be represented by UTF-16 Unicode internally. Use only single quotes.
+String str = "ab"; //works
+174.  Choose the wrong representation of a character literal in Octal notation in Java.
+        a. char ch='\65'; 
+        b. char ch='\142'; 
+        c. char ch='\065'; 
+        d. char ch='142'; 
+Answer [=]
+D
+Explanation: 
+char ch='\142'; //works
+char ch2 = '\97';//9 is not Octal digit
+175.  A Unicode character literal in Java is surrounded by a pair of ___? literal = \ua123 
+        a. Single Quotes
+        b. Double Quotes
+        c. Exclamations
+        d. Backslashes
+Answer [=]
+A
+Explanation: 
+char ch='\ua123';
+176.  What is the default boolean literal assigned to a boolean variable in Java?
+        a. true
+        b. false
+        c. undefined
+        d. None of the above
+Answer [=]
+B
+Explanation: 
+Default values are assigned only to the instance variables.
+177. What is the default character literal value assigned to a char variable in Java?
+        a. 'a'
+        b. '0'
+        c. '\u0000'
+        d. 0
+Answer [=]
+C
+
+178. What are the Type Conversions available in Java language?
+        a. Narrowing Type Conversion
+        b. Widening Type Conversion
+        c. A and B
+        d. None of the above
+Answer [=]
+C
+179. What is a higher data type in Java language?
+        a. A data type which holds more data than other data types
+        b. A data type whose size is more than other data types
+        c. A data type which can hold more precision digits than other data types
+        d. All the above
+Answer [=]
+D
+Explanation: 
+Float is bigger than short
+double is bigger than float
+180. What is a Widening Type Conversion in Java?
+        a. Conversion of data from higher data type to lower data type
+        b. Conversion of data from lower data type to higher data type
+        c. Conversion of data from any data type to any data type
+        d. None of the above
+Answer [=]
+B
+182. What is a Narrowing Type Conversion in Java?
+        a. Conversion of data from lower data type to higher data type
+        b. Conversion data from a higher data type to a lower data type
+        c. Conversion of data from any data type to any data type
+        d. None of the above
+Answer [=]
+B
+183. What is the result of a Narrowing type conversion?
+        a. Loss of data
+        b. Addition of data
+        c. Corruption of data
+        d. None of the above
+Answer [=]
+A
+Explanation: 
+int a =(int)1.2f;
+//a holds 1
+184. What is the result of a Widening Type Conversion in Java?
+        a. Loss of data
+        b. Gain of data
+        c. No change
+        d. None of the above
+Answer [=]
+C
+Explanation: 
+int a=456;
+float b = a; //No change of data
+//b holds 456.0;
+185. Type promotion in Java usually refers to ____.
+        a. Narrowing Type Conversion
+        b. Widening Type Conversion
+        c. No Type Conversion
+        d. None of the above
+Answer [=]
+B
+Explanation: 
+All integers are promoted to int or long.
+All characters are promoted to int from char or long from char.
+All float numbers are promoted to double.
+186. Type Casting in Java usually refers to ____?
+        a. Narrowing Type Conversion
+        b. Widening Type Conversion
+        c. No Type Conversion
+        d. None of the above
+Answer [=]
+A
+187. Explicit Type Conversion in Java refers to ___?
+        a. Narrowing Type Conversion
+        b. Widening Type Conversion
+        c. No Type Conversion
+        d. None of the above
+Answer [=]
+A
+188.  Implicit Type Conversion in Java is also called ___?
+        a. Narrowing Type Conversion
+        b. Widening Type Conversion
+        c. No Type Conversion
+        d. None of the above
+ 
+B
+Explanation: 
+Implicit type conversion is an Automatic Type Promotion from a lower data type to a higher data type.
+189.  Which are the compatible Data Types for Type Promotion or Type Casting?
+        a. byte, char, short
+        b. char, int, float
+        c. float, long, double
+        d. All the above
+ 
+D
+Explanation: 
+Number to Number conversions are possible with or without a data loss.
+190.  What is the output of the following Java Code? int a=9; float b = a/2; System.out.println(b); 
+        a. 4.0
+        b. 4.5
+        c. 5.0
+        d. None of the above
+Answer [=]
+191. What is the output of the below Java code snippet? char ch = 'A';//ASCII 65 int a = ch + 1; ch = (char)a; System.out.println(ch); 
+        a. 66
+        b. A
+        c. B
+        d. 65
+ 
+C
+Explanation: 
+ch is promoted to int and 1 is added. int value 66 is again type casted to char type. So out will be the next character of A i.e B.
+192.  What is the output of the below Java code snippet? float a = 8.2/2; System.out.println(a); 
+        a. 4.1
+        b. 8.1
+        c. 4	
+        d. Compiler error
+Answer [=]
+D
+Explanation: 
+Add a suffix f or F 
+float a = 8.2f/2;
+(or)
+explicit typecast
+float a = (float)8.2/2;
+System.out.println(a);
+193. What is the output of the Java code snippet? byte b = 25; b++; b = b+1; System.out.println(b); 
+        a. 25
+        b. 26
+        c. 27
+        d. Compiler error
+ 
+D
+Explanation: 
+Explicit type casting is required.
+Expression b+1 gives int value
+byte b = 25;
+b++;
+b = (byte)(b+1);
+System.out.println(b);
+//OUTPUT = 27
+196. What is the output of the Java code snippet? int a = 260; byte b= (byte)a; System.out.println(b); 
+A) 0
+B) 4
+C) 255
+D) 260
+Answer [=]
+B
+Explanation: 
+If a number is too big for a data type, it applies Modulo Division by the highest number possible of that data type. Byte range is -128 to +127. 260 > 127. So, modulo division is applied.
+260%256 = 4
+197. In a lossy Type Casting or Type Conversion, how is the number truncated to the target data type in Java?
+        a. That big number is divided by the target data type highest possible number say 2^N.
+        b. That big number is Modulo Divided by the target data type highest possible number say 2^N and the Remainder is taken.
+        c. That big number is Modulo Divided by the target data type highest possible number say 2^N and the Quotient is taken.
+        d. None of the above
+Answer [=]
+B
+Explanation: 
+byte Maximum = 256 = (*2^8)
+short maximum = 2^16 = 65536
+int maximum = 2^32
+long maximum = 2^64
+198.  What is the output of the Java code snippet? short a = (short)65540; System.out.println(a); 
+        a. 0
+        b. 4
+        c. 65536
+        d. 65540
+Answer [=]
+B
+Explanation: 
+65540 is bigger than short range -32768 to +32767.
+So, 65540 % 2^32 = 65540%65536 = 4
+199.  A boolean literal in Java can be type casted to which data type?
+        a. byte
+        b. short
+        c. int
+        d. None of the above
+Answer [=]
+D
+Explanation: 
+A boolean literal or variable takes only true or false. So, it does not accept numbers for type conversion.
+200. If a variable or operand in an expression is type long, then all the operands are type promoted to which data type?
+        a. int
+        b. long
+        c. float
+        d. double
+Answer [=]
+B
+Explanation: 
+All other operands are type promoted to the highest data type available in that expression. If the highest data type is double in an expression, the final result will also be a double value.
+ 
+
+201. An Arithmetic expression in Java involves which Operators or Operations?
+        a. Addition (+), Subtraction (-)
+        b. Multiplication (*), Division (/)
+        c. Modulo Division (%), Increment/Decrement (++/--), Unary Minus (-), Unary Plus (+)
+        d. All the above
+Answer [=]
+D
+202. Choose the Compound Assignment Arithmetic Operators in Java below.
+        a. +=, -=
+        b. *=, /=
+        c. %=
+        d. All the above
+Answer [=]
+D
+203. What is the output of the below Java code snippet? int a = 2 - - 7; System.out.println(a); 
+        a. -5
+        b. 10
+        c. 9
+        d. Compiler Error
+Answer [=]
+C
+Explanation: 
+Minus of Minus is Plus. So 2 - - 7 becomes 2+7.
+204.  What is the output of Java code snippet below? short p = 1; short k = p + 2; System.out.println(k); 
+        a. 1
+        b. 2
+        c. 3
+        d. Compiler error
+Answer [=]
+D
+Explanation: 
+Numbers are treated as int type by default. So an int value cannot be assigned to a short variable. You have to type cast the whole expression.
+short k = (short)(p + 2);
+205.  What is the output of Java code snippet? short k=1; k += 2; System.out.println(k); 
+        a. 1
+        b. 2
+        c. 3
+        d. Compiler error about Type Casting
+Answer [=]
+C
+Explanation: 
+Compound assignment operators automatically convert the expression value to the left-hand side data type.
+k = k + 1; //Error
+k += 1; //Works
+k++; //Works
+206.  What is the output of the Java code snippet? int a=5, b=10, c=15; a -= 3; b *= 2; c /= 5; System.out.println(a +" " + b + " " + c); 
+        a. 2 20 3
+        b. 2 20 5
+        c. 2 10 5
+        d. -2 20 3
+Answer [=]
+A
+Explanation: 
+a = a - 3;
+b = b*2;
+c = c/5;
+207. How do you rewrite the below Java code snippet? int p=10; p = p%3; 
+        a. p=%3; 
+        b. p%=3; 
+        c. p=3%; 
+        d. None of the above
+Answer [=]
+B
+208. Which is the arithmetic operator in Java that gives the Remainder of Division?
+        a. /
+        b. @
+        c. %
+        d. &
+Answer [=]
+C
+Explanation: 
+//Modulo Division operator
+// or simply Modulus Operator
+int a = 14%5;
+//a holds 4
+14(2
+ -10
+------
+   4
+209.  Arithmetic operators +, -, /, *  and % have which Associativity?
+        a. Right to Left
+        b. Left to Right
+        c. Right to Right
+        d. Left to Left
+Answer [=]
+B
+210.  Between Postfix and Prefix arithmetic operators in Java, which operators have more priority?
+        a. Postfix operators have more priority than Prefix operators
+        b. Prefix operators have more priority than Postfix operators
+        c. Both Prefix and Postfix operators have equal priority
+        d. None of the above
+Answer [=]
+A
+Explanation: 
+op++, op-- have more priority than --op, ++op.
+211.  Among Postfix Decrement and Prefix Increment operators in Java, which operator has less priority?
+        a. Postfix Decrement has less priority than Prefix Increment
+        b. Prefix Increment has less priority than Postfix Decrement
+        c. Both operators have same priority
+        d. None of the above
+Answer [=]
+B
+Explanation: 
+a++ > ++b
+212.  Increment and Decrement arithmetic operators in Java has which Associativity?
+        a. Left to Right
+        b. Right to Left
+        c. Left to Left
+        d. Right to Right
+Answer [=]
+B
+213.  Choose the correct statement about Java Operators +, -, *, / and %.
+        a. + and - have equal priority
+        b. * and / have equal priority
+        c. / and % have equal priority
+        d. All the above
+Answer [=]
+D
+Explanation: 
+All are having equal priority.
+214.  Among the operator groups (++, --) and (+, -, *, /, %) in Java, which group has higher priority? 
+        a. (++, --) group has higher priority than (+, -, *, /, %) group
+        b. (++, --) group has lower priority than (+, -, *, /, %) group
+        c. (++, --) group and (+, -, *, /, %) group have equal priority
+        d. None of the above
+Answer [=]
+A
+Explanation: 
+Again between Prefix and Post operators, Postfix operators have higher priority.
+215. What is the output of the Java code snippet? int a=10, b=6; int c = a+b*5; System.out.println(c); 
+        a. 40
+        b. 50
+        c. 80
+        d. Compiler error
+Answer [=]
+A
+Explanation: 
+* has higher priority than +. So, Multiplication operation is performed first.
+a+(b*5)
+10 + (6*5)
+10 + 30
+40
+216. What is the output of the Java code snippet? int a=10, b=5, c=3; int d = a+c/2*b; System.out.println(d); 
+        a. 17.5
+        b. 32.5
+        c. 15
+        d. 30
+Answer [=]
+C
+Explanation: 
+/ and * have equal priority. So associativity of Left to Right is used. Remember that 3/2 is 1 not 1.5 as both operands are integers.
+a+c/2*b
+a+(c/2*b)
+a + ( (c/2) * b)
+a + ( 3/2 * b)
+a + ( 1 * 5)
+10 + 5
+15
+217.  What is the output of the Java code snippet? int a=5, b=6; if(a++ == --b) { System.out.println("5=5"); } else { System.out.println("NONE"); } 
+        a. NONE
+        b. 5=5
+        c. Compiler error
+        d. None of the above
+Answer [=]
+B
+Explanation: 
+At time of evaluating a++ == --b, a(5)is compared with --b(6-1). So, "if" condition passes. If you check a value after the ELSE block, it will be a+1 i.e 6.
+218.  What is the output of the Java code snippet? int a=6, b=5; if(++b == a--) { System.out.println("RABBIT"); } else { System.out.println("BUNNY"); } 
+        a. RABBIT
+        b. BUNNY
+        c. Compiler error
+        d. None of the above
+Answer [=]
+A
+Explanation: 
+After the ELSE block, b will be b+1 i.e 6
+++b == a--
+++b == (a-1)
+b == (a-1)
+5 ==5
+219. What is the output of the Java code snippet? int a=10, b=20; int c = a++*2; int d = --b*2; System.out.println(c +"," + d); 
+        a. 20,40
+        b. 22,40
+        c. 20,38
+        d. 22,38
+Answer [=]
+C
+Explanation: 
+The prefix is incremented or decremented immediately. Postfix incremented or decremented on the next line/statement.
+1)
+a++*2
+a*2
+
+2)
+--b*2
+(b-1)*2
+220. Choose the correct statement about Java Prefix and Postfix operations.
+        a. Prefix operation is carried out immediately and the variable value will be incremented or decremented accordingly
+        b. Postfix operation is carried out on the next line or statement. So the variable value will not change.
+        c. A and B
+        d. None of the above
+Answer [=]
+C
+
+221.  What is the other name for Relational Operators in Java?
+        a. Comparison operators
+        b. Conditional operators
+        c. A and B
+        d. None of the above
+Answer [=]
+C
+ 222.  What are the types of data that can be used along with Relational operators in Java?
+        a) char, boolean, Object
+        b) byte, short, int, long
+        c) float, double
+        d) All the above
+Answer [=]
+D
+223. Choose the Conditional operators of Java listed below.
+        a. >, >=
+        b. <, <=
+        c. ==, !=
+        d. All the above
+Answer [=]
+D
+224. Which operator group has higher priority between (>, >=, <, <=) and (==, !=)?
+        a. (>, >=, <, <=) has lower priority (==, !=)
+        b. (>, >=, <, <=) has higher priority (==, !=)
+        c. (>, >=, <, <=) has equal priority with (==, !=)
+        d. None of the above
+Answer [=]
+B
+225. What is the output of the Java code snippet? int k=20; if(k) { System.out.println("YES"); } else { System.out.println("NO"); } 
+        a. NO
+        b. YES
+        c. Compiler error
+        d. None of the above
+Answer [=]
+C
+Explanation: 
+Error: if(k) --> k is not boolean
+Type mismatch: cannot convert from int to boolean
+226. What is the output of Java code snippet? int[] ary = {5,6,7,8}; if(ary.length > 2) { System.out.println(ary[2]); } 
+        a. 6
+        b. 7
+        c. 8
+        d. Compiler error
+Answer [=]
+B
+Explanation: 
+All Java arrays have a "length" field which holds the size of that array.
+228.  What is the data type of output of any Comparison Operation in Java?
+        a. int
+        b. char
+        c. boolean
+        d. byte
+Answer [=]
+C
+229.  What is the output of the Java code snippet? char ch='A'; if(ch > 70) { System.out.println("PIZZA"); } else { System.out.println("BURGER"); } 
+        a. PIZZA
+        b. BURGER
+        c. Compiler error
+        d. None of the above
+Answer [=]
+B
+Explanation: 
+ASCII or UNICODE value of character 'A' is 65. A char value is converted to int before comparing it.
+230.  What is the output of Java code snippet? int a=5, b=10; if(++b>10||a++=5) { System.out.println("PIZZA="+a); } else { System.out.println("BURGER="+a); } 
+        a. PIZZA=5
+        b. PIZZA=6
+        c. BURGER=5
+        d. BURGER=6
+Answer [=]
+A
+Explanation: 
+If Short Circuit OR (||) does not evaluate a++==5 as the first expression is true. So a is still 5.
+231. Among Relational operators and Assignment operators, which operators have higher priority?
+        a. Assignment operators have lower priority than Relational operators
+        b. Assignment operators have higher priority than Relational operators
+        c. Assignment operators have equal priority with Relational operators
+        d. None of the above
+Answer [=]
+A
+232.  What is the output of the Java code snippet? int a=20, b=10; boolean c = a>=10 & b<20; System.out.println(c); 
+        a. false
+        b. true
+        c. Compiler error
+        d. None of the above
+Answer [=]
+B
+
+233. What are the two possible Logical Operator types?
+        a. Bitwise Logical
+        b. Boolean Logical
+        c. Arithmetic Logical
+        d. A and B
+Answer [=]
+D
+234. Boolean logical operators in Java work with?
+        a. true/false boolean data
+        b. 1 and 0 of individual Bits
+        c. characters of a String
+        d. None of the above
+Answer [=]
+A
+235. Bitwise logical operators in Java work with?
+        a. true/false boolean data
+        b. 0 and 1 individual bits of data
+        c. Characters of a String
+        d. None of the above
+Answer [=]
+B
+236. In general Bitwise logical operators are simply called?
+        a. Logical operators
+        b. Bitwise operators
+        c. Binary operators
+        d. None of the above
+Answer [=]
+B
+Explanation: 
+Yes. Do not call Bitwise operators by adding the word Logical. It is confusing for any one.
+ 
+237.  What is the output of the Java code snippet? boolean b=false; b = !b; System.out.println(b); 
+        a. true
+        b. false
+        c. Compiler error
+        d. None of the above
+Answer [=]
+A
+238.  Which among the following is a Short Circuit AND operator?
+        a. &
+        b. &&
+        c. |
+        d. ||
+Answer [=]
+B
+Explanation: 
+Two ampersands &&
+239.  Which among the following is a Short Circuit OR operator?
+        a. & 
+        b. && 
+        c. | 
+        d. || 
+Answer [=]
+D
+Explanation: 
+Two Pipes ||
+240.  What is the output of a Logical OR (|) operation if one of the inputs/operands is false?
+        a. false
+        b. true
+        c. true or false
+        d. None of the above
+Answer [=]
+C
+Explanation: 
+Logical OR operator give true as output if at least one of the operands is true.
+241.  What is the output of Logical AND (&) operation if one of the inputs/operands is false?
+        a. false
+        b. true
+        c. true or false
+        d. None of the above
+Answer [=]
+A
+Explanation: 
+false & (anything) is false.
+242.  What is the output of a Logical OR (|) operation if one of the inputs/operands is true?
+A) false
+B) true
+C) true or false
+D) None of the above
+Answer [=]
+B
+Explanation: 
+true | (anything) is true.
+243. What is the output of a Logical AND (&) operation if one of the inputs/operands is true?
+        a. false
+        b. true
+        c. true of false
+        d. None of the above
+Answer [=]
+C
+Explanation: 
+true & (anything) = true or false
+ 
+ 
+ 
+244.  Why are Short Circuit AND (&&) and Short Circuit OR (||) operators are fast in Java?
+        a. By skipping the second expression or operand if possible and save time.
+        b. By using extra memory on the machine
+        c. By using extra CPU processing power
+        d. None of the above
+Answer [=]
+A
+Explanation: 
+Short Circuit operators are not 100% every time. Based on the value of the First operand, they decide whether to go evaluating the second expression
+
+245. What happens to the Second operand/expression if the first operand is FALSE with a Short Circuit AND (&&) operator?
+        a. Second operand/expression is evaluated and AND is applied.
+        b. Evaluation of Second operand/expression is skipped.
+        c. The compiler starts taking more memory
+        d. The compiler starts taking more CPU power.
+Answer [=]
+B
+Explanation: 
+Whether it is normal AND operator or Short Circuit AND operator, both operands should be TRUE to give output as true. If the first operand itself is false, there is no point in evaluating the second expression.
+246. What happens to the Second Operand/expression if the first operand is TRUE with a Short Circuit OR (||) operator in Java?
+        a. Second expression/operand is evaluated and OR is applied to both operands
+        b. Evaluating the Second expression/operand is skipped
+        c. The compiler starts taking more memory
+        d. The compiler starts taking more CPU power
+Answer [=]
+B
+Explanation: 
+Both OR (|) and Short Circuit OR (||) operators give an output of true if at least one operand is true. Already the first operand is true. There is no need to evaluate or execute the second expression/operand.
+247.  What is the output of an Exclusive OR (^) operation if one of the operands/expressions is TRUE?
+        a. false
+        b. true
+        c. true or false
+        d. None of the above
+Answer [=]
+C
+Explanation: 
+Exclusive OR (^) gives an output of true if both the operands are different. If both are the same (true / false), the output is false. So, with just one operand, you can not decide the output.
+248. What is the output of an Exclusive OR(^) operation, if one of the operands is false?
+        a. false
+        b. true
+        c. true or false
+        d. None of the above
+Answer [=]
+C
+Explanation: 
+Exclusive OR (^) gives an output of true if both the operands are different. If both are the same (true / false), the output is false. So, with just one operand, you can not decide the output.
+249. Which is the Logical operator in Java that has the highest priority among all other logical operators?
+        a. Short Circuit AND (&&)
+        b. AND (&)
+        c. NOT (!)
+        d. Exclusive OR (^)
+Answer [=]
+C
+250. Among the Logical operators, AND (&) and Short Circuit AND (&&), which has higher priority?
+        a. AND (&)
+        b. Short Circuit AND (&&)
+        c. Both have same priority
+        d. None of the above
+Answer [=]
+A
+251. Among the logical operators, OR (|) and Short Circuit OR (||), which operator has higher priority?
+        a. OR (|)
+        b. Short Circuit OR (||)
+        c. Both have the same priority
+        d. None of the above
+Answer [=]
+A
+252.  Among the logical operators, OR (|), Short Circuit OR (||) and Exclusive OR (^), which operator has higher priority?
+        a. OR (|)
+        b. Short Circuit OR (||)
+        c. Exclusive OR (^)
+        d. All operators have the same priority.
+Answer [=]
+C
+Explanation: 
+! >
+& >
+^ >
+| >
+&& >
+|| >
+Assignment
+253. Choose the correct version of Logical Compound Assignment operators in Java below?
+        a. &=, |=, ^=
+        b. &&=, ||=, !=
+        c. A and B
+        d. None of the above
+Answer [=]
+A
+Explanation: 
+There no logical compound assignment operators like &&=, ||=, !=.
+254.  What is the output of the Java code snippet below? byte a= 1; if(!a) { System.out.println("FISH"); } else { System.out.println("CRAB"); } 
+        a. CRAB
+        b. FISH
+        c. Compiler error
+        d. None of the above
+Answer [=]
+C
+Explanation: 
+You can not convert from byte to boolean.
+The operator ! is undefined for the argument type(s) byte  
+ 
+ 
+255.  What is the output of the Java code snippet? int a=3, b=8; boolean c = a>5 && ++b>6; System.out.println(b); 
+        a. 8
+        b. 9
+        c. 6
+        d. Compiler error
+Answer [=]
+A
+Explanation: 
+++b>6 is not evaluated as the first operand itself is false. Short Circuit AND operator skips the second expression.
+256.  What is the output of the Java code snippet? int a=5, b=9; boolean c = a>1 || b++<10; System.out.println(b); 
+        a. 9
+        b. 10
+        c. 8
+        d. Compiler error
+Answer [=]
+A
+Explanation: 
+b++<10 is not evaluated by the Short Circuit OR operator as the first operand is already true. There is no need to check the second expression.
+257.  What is the output of the Java code snippet? int a=4, b=6, c=8; boolean d = a>5 && b>5 & c++<10; System.out.println(c); 
+        a. 8
+        b. 9
+        c. 10
+        d. Compiler error
+Answer [=]
+258.  What is the output of the Java code snippet? int a=4, b=8; boolean c = a>1 ^ b<10; if(c) { System.out.println("TREE"); } else { System.out.println("BIRD"); } 
+        a. TREE
+        b. BIRD
+        c. Compiler error
+        d. None of the above
+Answer [=]
+B
+Explanation: 
+The exclusive operator (^) gives an output of TRUE only if both the operands are different.
+259. What is the output of the Java code snippet? int a=5; boolean b = a>1 || false; b ^= false; System.out.println(b); 
+        a. false
+        b. true
+        c. Compiler error
+        d. None of the above
+Answer [=]
+B
+Explanation: 
+b ^= false;
+b = b^false;
+b = true ^ false;
+b = true;
+
+ 
+260.  What is the output of the Java code snippet? int a=4, b=8; boolean c = a>2 ^ b<10 & false; System.out.println(c); 
+        a. false
+        b. true
+        c. Compiler error
+        d. None of the above
+Answer [=]
+B
+Explanation: 
+AND has a higher priority than Exclusive OR.
+a>2 ^ b<10 & false
+a>2 ^ (b<10 & false)
+a>2 ^ (true & false)
+a>2 ^ (false)
+true ^ false
+true
+261.  What is the output of the Java code snippet? int a=3, b=1; int c = a & b; System.out.println("CAT " + c); 
+        a. CAT true
+        b. CAT 1
+        c. Compiler error
+        d. None of the above
+Answer [=]
+B
+Explanation: 
+Here AND & operator is used with numbers. So, it is a Bitwise operator, not a Logical operator.
+262.  If an AND (&) operator is applied with two integers, what is this operator?
+        a. Boolean operator
+        b. Bitwise operator
+        c. Logical operator
+        d. Arithmetic operator
+Answer [=]
+B
+
+ 263.  Which is the Logical operator in Java that has the highest priority among all other logical operators?
+        a. Short Circuit AND (&&)
+        b. AND (&)
+        c. NOT (!)
+        d. Exclusive OR (^)
+Answer [=]
+C
+264. Among the Logical operators, AND (&) and Short Circuit AND (&&), which has higher priority?
+        a. AND (&)
+        b. Short Circuit AND (&&)
+        c. Both have same priority
+        d. None of the above
+Answer [=]
+A
+265. Among the logical operators, OR (|) and Short Circuit OR (||), which operator has higher priority?
+        a. OR (|)
+        b. Short Circuit OR (||)
+        c. Both have the same priority
+        d. None of the above
+Answer [=]
+A
+266.  Among the logical operators, OR (|), Short Circuit OR (||) and Exclusive OR (^), which operator has higher priority?
+A) OR (|)
+B) Short Circuit OR (||)
+C) Exclusive OR (^)
+D) All operators have the same priority.
+Answer [=]
+C
+Explanation: 
+! >
+& >
+^ >
+| >
+&& >
+|| >
+Assignment
+ 
+267.  What is the output of the Java code snippet below? byte a= 1; if(!a) { System.out.println("FISH"); } else { System.out.println("CRAB"); } 
+A) CRAB
+B) FISH
+C) Compiler error
+D) None of the above
+Answer [=]
+C
+Explanation: 
+You can not convert from byte to boolean.
+The operator ! is undefined for the argument type(s) byte  
+ What is the output of the Java code snippet? int a=25, b=30; boolean c = a>25 & b<40; if(c) {  
+ 
+268. What is the output of the Java code snippet? int a=3, b=8; boolean c = a>5 && ++b>6; System.out.println(b); 
+        a. 8
+        b. 9
+        c. 6
+        d. Compiler error
+Answer [=]
+A
+Explanation: 
+++b>6 is not evaluated as the first operand itself is false. Short Circuit AND operator skips the second expression.
+269. What is the output of the Java code snippet? int a=5, b=9; boolean c = a>1 || b++<10; System.out.println(b); 
+        a. 9
+        b. 10
+        c. 8
+        d. Compiler error
+Answer [=]
+A
+Explanation: 
+b++<10 is not evaluated by the Short Circuit OR operator as the first operand is already true. There is no need to check the second expression.
+270.  What is the output of the Java code snippet? int a=4, b=6, c=8; boolean d = a>5 && b>5 & c++<10; System.out.println(c); 
+        a. 8
+        b. 9
+        c. 10
+        d. Compiler error
+Answer [=]
+271.  What is the output of the Java code snippet? int a=4, b=8; boolean c = a>1 ^ b<10; if(c) { System.out.println("TREE"); } else { System.out.println("BIRD"); } 
+        a. TREE
+        b. BIRD
+        c. Compiler error
+        d. None of the above
+Answer [=]
+B
+Explanation: 
+The exclusive operator (^) gives an output of TRUE only if both the operands are different.
+272.  What is the output of the Java code snippet? int a=5; boolean b = a>1 || false; b ^= false; System.out.println(b); 
+        a. false
+        b. true
+        c. Compiler error
+        d. None of the above
+Answer [=]
+B
+Explanation: 
+b ^= false;
+b = b^false;
+b = true ^ false;
+b = true;
+
+ 
+273.  What is the output of the Java code snippet? int a=4, b=8; boolean c = a>2 ^ b<10 & false; System.out.println(c); 
+        a. false
+        b. true
+        c. Compiler error
+        d. None of the above
+Answer [=]
+B
+Explanation: 
+AND has a higher priority than Exclusive OR.
+a>2 ^ b<10 & false
+a>2 ^ (b<10 & false)
+a>2 ^ (true & false)
+a>2 ^ (false)
+true ^ false
+true
+274. What is the output of the Java code snippet? int a=3, b=1; int c = a & b; System.out.println("CAT " + c); 
+        a. CAT true
+        b. CAT 1
+        c. Compiler error
+        d. None of the above
+Answer [=]
+B
+Explanation: 
+Here AND & operator is used with numbers. So, it is a Bitwise operator, not a Logical operator.
+275.  If an AND (&) operator is applied with two integers, what is this operator?
+        a. Boolean operator
+        b. Bitwise operator
+        c. Logical operator
+        d. Arithmetic operator
+Answer [=]
+B
+ 
+276. Right Shift >> in Java is equivalent to?
+        a. Multiplying the number by 2
+        b. Dividing the number by 2`
+        c. Subtracting the number by 2
+        d. Adding the number by 2
+Answer [=]	
+B
+Explanation: 
+byte a = 0b0000_0100; //4
+a = a >> 1;
+//a now holds 0000_0010 i.e 2
+277.  What is the output of the Java code snippet? byte a = 0b0000_0001; System.out.println(~a); 
+        a. -1
+        b. -2
+        c. 254
+        d. +127
+Answer [=]
+B
+Explanation: 
+a = 0b0000_0001; //1
+~a = 1111_1110; //254
+Byte rannge is -128 to +127.
+So, overflown 255 goes
+to the negative side
+278. What does this Java code snippet prints? int b=45; String str=""; while(b > 0) { str = str + b%2; b = b/2; } StringBuilder sb = new StringBuilder(str); sb.reverse(); System.out.println(sb.toString()); 
+        a. Prints the remainder of a number
+        b. Prints Binary representation of a number
+        c. Prints Octal representation of a number
+        d. Prints Hexadecimal representation of a number
+Answer [=]
+B
+Explanation: 
+The output is 101101 (45).
+279. What is the output of the Java code snippet? System.out.println(0b0000_1000); 
+        a. 0b0000_1000
+        b. 1000
+        c. 8
+        d. 9
+Answer [=]
+C
+Explanation: 
+Binary literals start with 0b. Above number is 8 in decimal notation.
+ 
+280. Find operators that work as both Logical operators and Bitwise operators in Java?
+        a. &, &= 
+        b. |, |= 
+        c. ^, ^= 
+        d. All the above
+Answer [=]
+D
+281.  If relational operators are present in an expression, what type of other operators may be used?
+        a. Logical operators
+        b. Bitwise operators
+        c. A and B
+        d. None of the above
+Answer [=]
+A
+Explanation: 
+Logical & is used here.
+(a>5) & (b<10)
+ 
+282. What is the output of the Java program? byte b = 0b0000101; System.out.print(b + ","); b &= 0b00001111; System.out.print(b);  
+        a. 5, 0
+        b. 5,5
+        c. 5,15
+        d. None
+Answer [=]
+B
+Explanation: 
+0101 & 1111 = 0101. &= is a Bitwise AND Shorthand Assignement operator.
+ 283.  What is the output of the Java program? byte b = 0b00000101; System.out.print(b + ","); b = (byte)~b; System.out.print(b); 
+        a. 5, 10
+        b. 5, -10
+        c. 5. -6
+        d. Compiler error
+Answer [=]
+C
+Explanation: 
+Bitwise NOT(~) operator turns 1s to 0s
+and 0s to 1s. If the leftmost bit is 1,
+it is a negative number.
+So take 1's complement and add 1 to it.
+~0000 0101 =
+ 1111 1010
+-----------
+~ 111 1010 =
+  000 0101
+-----------
+  000 0101
+  000 0001 +
+-----------
+- 000 0110
+ 
+ 
+ 284.  What is the output of the Java program? byte num = (byte)0b000_1000; if(num >> 1 > 6) { System.out.print(num); } else { System.out.println(num>>1); } 
+        a. 8
+        b. 6
+        c. 4
+        d. Compiler error
+Answer [=]
+C
+Explanation: 
+(num>>1)>6
+4 > 6 = false
+ 285.  What is the output of the Java Program? byte num = (byte)0b000_1000; if(num >> 1 > 6 || true) { System.out.print(num); } else { System.out.println(num>>1); } 
+        a. 8
+        b. 6
+        c. 4
+        d. 2
+Answer [=]
+A
+Explanation: 
+Logical OR (||) is executed at last.
+(4>6) || true = false||true
+= true
+ 
