@@ -1,5 +1,5 @@
 # Javacodes
-useful collection of 100+ java algorithms 
+useful collection of 250+ java algorithms 
 and popular errors that any coder can have.
 
 Repo creator:Tapan Manu
