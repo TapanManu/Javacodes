@@ -189,3 +189,12 @@ class Date{
         d.absoluteDay();
     }
 }
+//output
+Enter the month(number),day and year in the given order
+4 20 2000
+date:20/4/2000
+number of days in given month:30
+Thursday
+the month:April
+next date:21/4/2000
+111th day
