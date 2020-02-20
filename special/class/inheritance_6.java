@@ -51,3 +51,23 @@ System.out.println("=========================");
 }
 }
 }
+Jerry 1 
+Jerry 2 
+Elaine Kramer
+
+=========================
+Jerry 1 
+Jerry 2 
+Kramer
+
+=========================
+Jerry 1 
+Jerry 2 
+Jerry
+
+=========================
+Jerry 1 
+Jerry 2 
+Elaine Kramer
+
+=========================
