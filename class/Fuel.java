@@ -33,6 +33,11 @@ class FuelMonitor{
         distance=fuel_in_tank*efficiency;
         System.out.println("distance:"+distance+"km");
     }
+    void fuelCount(int dist){
+        fuel_in_tank=fuel_in_tank-dist/efficiency;
+        System.out.println("balance_fuel"+fuel_in_tank);
+        driveDistance();
+    }
     public static void main(String[] args) {
         FuelMonitor car = new FuelMonitor(20,20);
         try{
@@ -43,6 +48,7 @@ class FuelMonitor{
         }
         finally{
         car.driveDistance();
+        car.fuelCount(20);
         }
     }
 
