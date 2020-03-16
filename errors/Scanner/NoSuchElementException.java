@@ -31,7 +31,7 @@ public class Numbers{
         Scanner sc = new Scanner(System.in);
         System.out.println("enter two numbers");
         Numbers n = new Numbers(sc.nextInt(),sc.nextInt());
-        sc.close();
+        sc.close(); //this is causing the error
     }
     public static void threeNum(){
         Numbers n;
@@ -42,10 +42,12 @@ public class Numbers{
         //n2=sc.nextInt();
         //n3=sc.nextInt();
         n = new Numbers(scan.nextInt(),scan.nextInt(),scan.nextInt());
-        scan.close();
+        scan.close();//this is causing the error
     }
     public static void main(String[] args) {
         twoNum();
         threeNum();
     }
 }
+//sc.close() closes the System.in, not just the sc object. This means that after the first call to add, the scan object will only consume the
+//input it already has and then you'll receive a NoSuchElementException: Remove this line.
