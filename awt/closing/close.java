@@ -1,5 +1,6 @@
 import java.awt.*;
 import java.awt.event.*;
+//implementing window listener
 class MyFrame extends Frame implements WindowListener{
 	MyFrame(){
 		addWindowListener(this);
