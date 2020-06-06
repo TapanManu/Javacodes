@@ -19,7 +19,7 @@ class  sample{
   
         /* Creating an object of GregorianCalendar class 
            by specifiying year, month and dayOfMonth */
-        GregorianCalendar gcal = new GregorianCalendar(2001, , 30); 
+        GregorianCalendar gcal = new GregorianCalendar(2001,0, 30); 
         GregorianCalendar gc = new GregorianCalendar();
   
         // displaying the date, time, time zone and locale 
