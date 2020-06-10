@@ -3,7 +3,7 @@ import java.sql.Connection;
   class JDBCTest { 
   	private static final String url = "jdbc:mysql://localhost";
   	 private static final String user = "root";
-  	  private static final String password = "tapan*1234";
+  	  private static final String password = "your password";
   	   public static void main(String args[])
   	    { try 
   	    	{ 
