@@ -16,4 +16,8 @@
    
 4. then establish connectivity
 
-   con = DriverManager.getConnection(url,user,pass); 
+   con = DriverManager.getConnection(url,user,pass);
+   
+   where url="jdbc:mysql://localhost[:portname]/database name"   []=optional
+   
+   user and pass are username and password of mysql user.
