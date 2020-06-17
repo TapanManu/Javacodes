@@ -2,8 +2,9 @@ import javax.swing.*;
 import java.awt.Color;
 import java.awt.event.*;
 import java.lang.Thread;
+import java.lang.Runnable;
 //digital stopwatch using awt
-class StopWatch extends JFrame{
+class StopWatch extends JFrame {
 	JLabel l,m,s,ms;
 	JButton start,reset,stop;
 	boolean flag = true;
@@ -47,6 +48,7 @@ class StopWatch extends JFrame{
      
      reset.addActionListener(new ActionListener() {
               public void actionPerformed(ActionEvent e){
+              	flag = false;
               	m.setText("00");
                 s.setText("00");   
                 countm=0;
@@ -56,17 +58,27 @@ class StopWatch extends JFrame{
      start.addActionListener(new ActionListener() {
               public void actionPerformed(ActionEvent e){
               	flag=true; 
-              	//addstart command
+              	new Thread(new Runnable(){
+              		public void run(){
+    					try{
+    						incrClock();
+    					}
+    					catch(InterruptedException e){
+    					System.out.println("exception");
+    					}
+    			}
+              	}).start();
               }
 	});
+
 
      stop.addActionListener(new ActionListener() {
               public void actionPerformed(ActionEvent e){
               	flag=false;  	
-
               }
 	});
 }
+    
 	public void incrClock() throws InterruptedException{
 		while(flag){
 		Thread.sleep(1000);
@@ -82,12 +94,9 @@ class StopWatch extends JFrame{
 }
 
 	public static void main(String[] args) {
-		try{
-		new StopWatch().incrClock();
-	    }
-	    catch(InterruptedException e){
-	    	System.out.println("exception");
-	    }
+		
+		new StopWatch();
+	   
 	}
 
 }
