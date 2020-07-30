@@ -1,6 +1,6 @@
 # Javacodes
-useful collection of 300+ java algorithms 
-and popular errors that any coder can have.
+useful collection of 400+ java algorithms 
+and popular errors that any coder can have.  :heartbeat:
 
 Repo creator:Tapan Manu
 
