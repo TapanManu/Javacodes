@@ -18,3 +18,5 @@ making easier for beginners to understand the basic concepts
 
 # Specials
 Special is the directory consisting of variety codes in java that produce variety outputs
+
+It is really a supportive library to improve concepts over Java
