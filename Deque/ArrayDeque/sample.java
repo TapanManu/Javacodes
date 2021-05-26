@@ -1,6 +1,7 @@
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Iterator;
+// sample deque code
 
 class Block{
     public static void main(String[] args) {
